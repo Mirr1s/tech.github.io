@@ -90,6 +90,8 @@ body {
 .integrante img {
     max-width: 75%;
     border-radius: 15%;
+    height: 50px;
+    width: 80px;
 }
 .integrante h2 {
     font-size: 20px;
