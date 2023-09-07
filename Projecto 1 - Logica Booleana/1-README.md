@@ -49,6 +49,6 @@ Para la implementación de la compuerta se usaron 2 inversores y 8 compuertas AN
 Para la implementación de la compuerta se usaron 2 DMux4Way y un DMux.
 
 #### Referencias 
-1. Schocken, S., & Nisan, N. (2017). Project 01. Nand2tetris. Recuperado 19 de noviembre de 2021, de https://www.nand2tetris.org/project01
+1. Schocken, S., & Nisan, N. (2017). Project 01. Nand2tetris. Recuperado 7 de Septiembre de 2023, de https://www.nand2tetris.org/project01
 
-2. Villalobos, J. (2017, 27 julio). Implementando funciones boleanas con HDL - CS01. github. Recuperado 19 de noviembre de 2021, de https://jorovipe97.github.io/Implementando-funciones-boleanas-CS01/
+2. Villalobos, J. (2017, 27 julio). Implementando funciones boleanas con HDL - CS01. github. Recuperado 7 de Septiembre de 2023, de https://jorovipe97.github.io/Implementando-funciones-boleanas-CS01/
