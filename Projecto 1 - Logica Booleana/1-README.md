@@ -30,5 +30,25 @@ Para obtener esta compuerta, hacemos una and por cada posicion de la lista toman
 #### Compuerta Or16
 Para obtener esta compuerta, hacemos una  or por cada posicion de la lista tomando en cuenta la posicion de salida
 
+#### Compuerta Mux16
+Para obtener esta compuerta s eimplemento 16 veces la compuerta Mux, teniendo 32 entradas y 16 salidas.
+
 #### Compuerta Or8Way
 Esta es una compuerta Or que recibe 8 entradas, para esto se podía armar tanto en cascada como en arbol con solo compuertas OR, en este caso optamos por armarlo en cascada-
+
+#### Compuerta Mux4Way16
+Para la implementación de la compuerta se usaron 3 compuertas Mux16
+
+#### Compuerta Mux8Way16
+Para implementar esta compuerta se usaron 2 Mux4Way16 de 4 entradas y un Mux16 de 2 entradas.
+
+#### Compuerta DMux4Way
+Para la implementación de la compuerta se usaron 2 inversores y 8 compuertas AND.
+
+#### Compuerta Dmux8Way
+Para la implementación de la compuerta se usaron 2 DMux4Way y un DMux.
+
+#### Referencias 
+1. Schocken, S., & Nisan, N. (2017). Project 01. Nand2tetris. Recuperado 19 de noviembre de 2021, de https://www.nand2tetris.org/project01
+
+2. Villalobos, J. (2017, 27 julio). Implementando funciones boleanas con HDL - CS01. github. Recuperado 19 de noviembre de 2021, de https://jorovipe97.github.io/Implementando-funciones-boleanas-CS01/
