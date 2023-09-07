@@ -11,8 +11,6 @@
  *       d if sel == 11
  */
 
-//Este chip fue implementado usando 3 Mux16, la función de los 2 primeros multiplexores es recibir las 4 entradas, cada uno se encarga de 2 de ellas,  se ve que se usa el bit ubicado en la posicion 0 del selector para controlar el selector del mux1 y el otro bit se usa para controlar el selector del mux2.
-
 CHIP Mux4Way16 {
     IN a[16], b[16], c[16], d[16], sel[2];
     OUT out[16];
