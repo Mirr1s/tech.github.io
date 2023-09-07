@@ -9,8 +9,6 @@
  *                        b[i] if sel == 1
  */
 
-//Este chip es un análogo de 16 bits de la compuerta Mux, utiliza 32 entradas para las compuertas y obtenemos 16 salidas, dicho de otra forma, la compuerta MUX implementada 16 veces.
-
 CHIP Mux16 {
     IN a[16], b[16], sel;
     OUT out[16];
