@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E7F6F2;
+}
+
+/* Estilos para el encabezado */
+.encabezado {
+    background-color: #2C3639;
+    color: #fff;
+    padding: 20px; /* Ajusta el espaciado según tus preferencias */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 120px; /* Ajusta el tamaño de tu logo según sea necesario */
+    margin-left: 139%; /* Separación de un cuarto de la pantalla desde el lado izquierdo */
+    border-radius: 55px;
+    border: 2px solid #E7F6F2; /* Ancho y color del contorno */
+    border-radius: 55px; /* Radio para hacer el contorno redondo */
+    padding: 1px; /*
+}
+
+.nombre {
+    margin-left: 15%; /* Separación de un cuarto de la pantalla desde el lado izquierdo */
+}
+
+.nombre h1 {
+    margin-left: 200px
+}
+
+
+/* Estilo para la sección de Inicio */
+#inicio {
+    text-align: center;
+    padding: 50px 120px;
+}
+
+#inicio h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#inicio p {
+    font-size: 20px;
+    justify-content: space-around;
+    
+}
+
+#inicio ul {
+    list-style: none;
+    padding: 0;
+}
+
+#inicio ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* E/* Estilos para la sección de Integrantes */
+#integrantes {
+    background-color: #E7F6F2;
+    padding: 50px 160px;
+    text-align: center;
+}
+
+.integrantes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+}
+
+.integrante {
+    flex-basis: calc(35.33% - -78px); /* Para tener tres columnas y espacio entre ellas */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para centrar el cuarto integrante verticalmente */
+.centrado {
+    flex-basis: calc(35.33% - -78px);
+    text-align: center;
+    margin-top: auto; /* Empuja el último integrante hacia abajo */
+}
+
+.integrante img {
+    max-width: 75%;
+    border-radius: 15%;
+}
+.integrante h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.integrante h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.integrante p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Estilo para la sección de Trabajos */
+#trabajos {
+    background-color: #2C3333;
+    padding: 50px 160px;
+    text-align: center;
+}
+
+.trabajo {
+    background-color: #E7F6F2;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+}
+
+
+.trabajo h3 {
+    font-size: 24px;
+    margin: 0; /* Eliminar el margen superior e inferior */
+    flex: 1; /* Distribuir espacio entre el título y el video */
+    text-align: center; /* Centrar el texto horizontalmente */
+    
+}
+
+.trabajo p {
+    font-size: 16px;
+    margin: 0; /* Eliminar el margen superior e inferior */
+    flex: 1; /* Distribuir espacio entre la descripción y el video */
+    text-align: center; /* Centrar el texto horizontalmente */
+    padding: 20px 70px;
+    text-align: justify;
+}
+
+.trabajo iframe {
+    flex: 2; /* Dar más espacio al video */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #526D82;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #000000;
+}
+
+/* Estilos para la barra inferior */
+.barra-inferior {
+    background-color: #040303;
+    color: #fff;
+    text-align: center; 
+    padding: 10px;
+}
