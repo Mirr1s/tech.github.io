@@ -1,10 +1,15 @@
 # Grupo Tech - Projecto 2: Aritmetica Booleana
 
 En la segunda practica vamos a elaborar todos los chips descritos en el capitulo número dos, estos son: HalfAdder, FullAdder, Add16, Inc,17, ALU. Para la realización de estos se van a usar muchos de los chips que ya fueron terminados en la primer practica. Y de igual manera, los chips que vayamos armando se puede usar para otros en este mismo capitulo, como lo verán acontinuacion.
-
 #
 #### HalfAdder
-La primera compuerta y la más sencilla, esta puede ser construida con una compuerta Nand poniendo en sus argumentos, la misma variable de entrada para los dos.
+Para realizar el medio sumador, nos basamos principalmente en el diagrama de esta función, más especificamente en el siguiente:
+
+![HalfAdder](https://github.com/Mirr1s/tech.github.io/assets/113645885/0a0dcabe-de6c-44ae-8eb9-9fb49de0da56)
+
+Gupta, Sourav. (2018) Half Adder Circuit and its Construction [png]. Circuit Digest. https://circuitdigest.com/tutorial/half-adder-circuit-and-its-construction
+
+Por lo que se puede observar, este tiene dos entradas A y B y dos salidas, que es la suma y el carry. Para realizar esta operación se hace uso de una compuerta XOR para la suma y una compuerta AND para el carry.
 
 #### Compuerta And
 Para esta compuerta, simplemente negamos los resultados de una compuesta Nand con la compuerta Not que ya construimos.
