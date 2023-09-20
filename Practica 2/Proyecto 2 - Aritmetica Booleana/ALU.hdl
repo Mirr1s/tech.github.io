@@ -1,0 +1,102 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/02/ALU.hdl
+
+/**
+ * The ALU (Arithmetic Logic Unit).
+ * Computes one of the following functions:
+ * x+y, x-y, y-x, 0, 1, -1, x, y, -x, -y, !x, !y,
+ * x+1, y+1, x-1, y-1, x&y, x|y on two 16-bit inputs, 
+ * according to 6 input bits denoted zx,nx,zy,ny,f,no.
+ * In addition, the ALU computes two 1-bit outputs:
+ * if the ALU output == 0, zr is set to 1; otherwise zr is set to 0;
+ * if the ALU output < 0, ng is set to 1; otherwise ng is set to 0.
+ */
+
+// Implementation: the ALU logic manipulates the x and y inputs
+// and operates on the resulting values, as follows:
+// if (zx == 1) set x = 0        // 16-bit constant
+// if (nx == 1) set x = !x       // bitwise not
+// if (zy == 1) set y = 0        // 16-bit constant
+// if (ny == 1) set y = !y       // bitwise not
+// if (f == 1)  set out = x + y  // integer 2's complement addition
+// if (f == 0)  set out = x & y  // bitwise and
+// if (no == 1) set out = !out   // bitwise not
+// if (out == 0) set zr = 1
+// if (out < 0) set ng = 1
+
+CHIP ALU {
+    IN  
+        x[16], y[16],  // 16-bit inputs        
+        zx, // zero the x input?
+        nx, // negate the x input?
+        zy, // zero the y input?
+        ny, // negate the y input?
+        f,  // compute out = x + y (if 1) or x & y (if 0)
+        no; // negate the out output?
+
+    OUT 
+        out[16], // 16-bit output
+        zr, // 1 if (out == 0), 0 otherwise
+        ng; // 1 if (out < 0),  0 otherwise
+
+    PARTS:
+    // Put you code here:
+    Mux16(a=x, b=false, sel=zx, out=zerox);
+    Mux16(a=y, b=false, sel=zy, out=zeroy);
+
+    Not16(in=zerox, out=notx);
+    Mux16(a=zerox, b=notx, sel=nx, out=outx);
+    Not16(in=zeroy, out=noty);
+    Mux16(a=zeroy, b=noty, sel=ny, out=outy);
+    
+    Add16(a=outx, b=outy, out=addout);
+    And16(a=outx, b=outy, out=andout);
+
+    Mux16(a=andout, b=addout, sel=f, out=out1);
+
+    Not16(in=out1, out=notout);
+
+    Mux16(a=out1, b=notout, sel=no, out=outf, out[15]=ng, out[0..7]=outl, out[8..15]=outr);
+
+    Or16(a=outf, b=false, out=out); 
+
+    Or8Way(in=outl, out=outz1);
+    Or8Way(in=outr, out=outz2);
+    Or(a=outz1, b=outz2, out=outzf);
+    Not(in=outzf, out=zr);
+
+    // Intentos Fallidos de Implementacion de las salidas zr y ng, por errores en el codigo y desconocimiento de los hdl no funcionaron.
+
+    //Implementacion fallida de nuevos chips para la ALU (el zero16 funciona, pero no fui capaz de que el software lo reconociera en el codigo. No probe el segundo chip luego de ese fracaso)
+    //Zero16(a=outf, out=zr);
+    //NotGreaterThan(a=outf, b=ng);
+
+    //Implementacion fallida para el zr, fallos en los buses con outf, el mismo codigo que estaba en el Zero16
+    /*
+    Or(a=outf[0], b=false, out=orout1);
+    Or(a=outf[1], b=orout1, out=orout2);
+    Or(a=outf[2], b=orout2, out=orout3);
+    Or(a=outf[3], b=orout3, out=orout4);
+    Or(a=outf[4], b=orout4, out=orout5);
+    Or(a=outf[5], b=orout5, out=orout6);
+    Or(a=outf[6], b=orout6, out=orout7);
+    Or(a=outf[7], b=orout7, out=orout8);
+    Or(a=outf[8], b=orout8, out=orout9);
+    Or(a=outf[9], b=orout9, out=orout10);
+    Or(a=outf[10], b=orout10, out=orout11);
+    Or(a=outf[11], b=orout11, out=orout12);
+    Or(a=outf[12], b=orout12, out=orout13);
+    Or(a=outf[13], b=orout13, out=orout14);
+    Or(a=outf[14], b=orout14, out=orout15);
+    Or(a=outf[15], b=orout15, out=zr);
+    */
+
+    //Implementacion fallida para el ng, los buses no cuadraban, ademas no funciona
+    //Not16(in=outf, out=notoutng);
+    //And16(a=notoutng, b[0..15]=false, out=ng);
+
+    //Implementacion del ng basandome un poco en la escritura de otro lugar. Pero que en realidad, sobra.
+    //And16(a=outf, b[0..15]=true, out=outng, out[15]=ng);
+}
