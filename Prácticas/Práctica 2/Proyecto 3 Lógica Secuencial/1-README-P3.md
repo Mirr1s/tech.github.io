@@ -1,6 +1,6 @@
-# Grupo Tech - Proyecto 2: Lógica Secuencial
+# Grupo Tech - Proyecto 3: Lógica Secuencial
 
-En la segunda practica vamos a elaborar todos los chips descritos en el capitulo número tres, estos son: Bit, Register, RAM8, RAM64,RAM512,RAM4K,RAM16K,PC. Para la realización de estos se van a usar muchos de los chips que ya fueron terminados en la primer practica. Y de igual manera, los chips que vayamos armando se puede usar para otros en este mismo capitulo, como lo verán acontinuacion.
+En la tercer practica vamos a elaborar todos los chips descritos en el capitulo número tres, estos son: Bit, Register, RAM8, RAM64,RAM512,RAM4K,RAM16K,PC. Para la realización de estos se van a usar muchos de los chips que ya fueron terminados en la primer practica. Y de igual manera, los chips que vayamos armando se puede usar para otros en este mismo capitulo, como lo verán acontinuacion.
 #
 #### Bit
 ![BIT](https://github.com/Mirr1s/tech.github.io/blob/c8c0ac8acb9886055e18aa3fe835694ce9ecf5e1/imagenes/Captura.JPG)
