@@ -25,7 +25,10 @@ Este chip es la unión de varios register dependiendo de las entradas que tengam
 En este chip utilizamos el chip de RAM8 y nos volvemos a apoyar en el DMux8Way y el Mux8Way16 para organizar donde se guardan
 
 #### RAM512
-para obtener esta compuerta, nos guiamos en la tabla de verdad abreviada mostrada en la documentacion y utilizando conpuertas Nand y not mostramos que sel en 0 da como salida la entrada a y sel en 1 da como resultado da la salida la entrada b
+Para la RAM 512 se usa una estructura semejante a la del chip anterior solo que esta vez se aumenta la escala usando RAM 16, también se emplea una dirección de 9 bits para acceder en cada registro. 
 #### RAM4K
+La RAM 4K se construye con una estructura semejante a la del chip anterior solo que esta vez se aumenta la escala usando RAM 512, junto a una dirección de 12 bits para acceder en cada registro.
 #### RAM16K
+Para la RAM 512 se usa una estructura semejante a la del chip anterior solo que esta vez se aumenta la escala usando RAM 16, también se emplea una dirección de 9 bits para acceder en cada registro. 
 #### PC
+Es un contador que consta de 16 bits, en este contador se utilizan buses de 16 bits, posee 2 bits de control, uno de ellos se encarga de definir la lectura de datos, y por su parte, el otro es uno de reinicio.
