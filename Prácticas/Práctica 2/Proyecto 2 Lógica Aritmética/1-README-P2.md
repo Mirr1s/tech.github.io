@@ -180,8 +180,10 @@ Aqui el codigo
 
 2. Villalobos, J. (2017, 2 Agosto). Implementando una ALU - CS02. github. Recuperado 17 de Septiembre de 2023, de https://jorovipe97.github.io/ALU/#implementando-la-alu
 
-3. Anónimo(2022). Inc16. nand2tetris. Recuperado el 20 de Septiembre de 2023, de https://gittest2121.gitbook.io/nand2tetris/combinational-chips/inc16-chip
+3. onthelearn (2017, 15 Julio). How to make an ALU (Arithmetic Logic Unit) from logic gates and mux | nand2tetris project 02. Youtube. Recuperado el 20 de Septiembre de 2023, de https://www.youtube.com/watch?v=Vtcm1oSSI0o
 
-4. Gupta, Sourav. (2018). Half Adder Circuit and its Construction. Circuit Digest. Recuperado el 20 de Septiembre de 2023, de https://circuitdigest.com/tutorial/half-adder-circuit-and-its-construction
+4. Anónimo(2022). Inc16. nand2tetris. Recuperado el 20 de Septiembre de 2023, de https://gittest2121.gitbook.io/nand2tetris/combinational-chips/inc16-chip
 
-5. Gupta, Sourav. (2018). Full Adder Circuit and its Construction. Circuit Digest. Recupero el 20 de Septiembre de 2023, de https://circuitdigest.com/tutorial/full-adder-circuit-theory-truth-table-construction
+5. Gupta, Sourav. (2018). Half Adder Circuit and its Construction. Circuit Digest. Recuperado el 20 de Septiembre de 2023, de https://circuitdigest.com/tutorial/half-adder-circuit-and-its-construction
+
+6. Gupta, Sourav. (2018). Full Adder Circuit and its Construction. Circuit Digest. Recupero el 20 de Septiembre de 2023, de https://circuitdigest.com/tutorial/full-adder-circuit-theory-truth-table-construction
