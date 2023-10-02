@@ -17,52 +17,48 @@
 @SCREEN
 D=A
 @0
-M=D	//PUT SCREEN START LOCATION IN RAM0
+M=D	
 
-///////////////////////////
 (PruebaTeclado)
-
 @KBD
 D=M
 @PantallaNegra
-D;JGT	//JUMP IF ANY KBD KEYS ARE PRESSED
+D;JGT	
 @PantallaBlanca
-D;JEQ	//ELSE JUMP TO WHITEN
-
+D;JEQ	
 @PruebaTeclado
 0;JMP
-///////////////////////////
+
 (PantallaNegra)
 @1
-M=-1	//WHAT TO FILL SCREEN WITH (-1=11111111111111)
+M=-1
 @Op
 0;JMP
 
 (PantallaBlanca)
 @1
-M=0	//WHAT TO FILL SCREEN WITH
+M=0	
 @Op
 0;JMP
-//////////////////////////
+
 (Op)
-@1	//CHECK WHAT TO FILL SCREEN WITH
-D=M	//D CONTAINS BLACK OR WHITE
+@1	
+D=M	
 
 @0
-A=M	//GET ADRESS OF SCREEN PIXEL TO FILL
-M=D	//FILL IT
+A=M	
+M=D	
 
 @0
-D=M+1	//INC TO NEXT PIXEL
+D=M+1	
 @KBD
-D=A-D	//KBD-SCREEN=A
+D=A-D	
 
 @0
-M=M+1	//INC TO NEXT PIXEL
+M=M+1	
 A=M
 
 @Op
-D;JGT	//IF A=0 EXIT AS THE WHOLE SCREEN IS BLACK
-/////////////////////////
+D;JGT	
 @Reinicio
 0;JMP
