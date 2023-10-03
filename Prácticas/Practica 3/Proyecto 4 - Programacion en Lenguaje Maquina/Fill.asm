@@ -14,51 +14,59 @@
 // Put your code here.
 
 (Reinicio)
-@SCREEN
-D=A
-@0
-M=D	
+    @SCREEN
+    D=A
+
+    @0
+    M=D	
 
 (PruebaTeclado)
-@KBD
-D=M
-@PantallaNegra
-D;JGT	
-@PantallaBlanca
-D;JEQ	
-@PruebaTeclado
-0;JMP
+    @KBD
+    D=M
+
+    @PantallaNegra
+    D;JGT	
+
+    @PantallaBlanca
+    D;JEQ	
+
+    @PruebaTeclado
+    0;JMP
 
 (PantallaNegra)
-@1
-M=-1
-@Op
-0;JMP
+    @1
+    M=-1
+
+    @Op
+    0;JMP
 
 (PantallaBlanca)
-@1
-M=0	
-@Op
-0;JMP
+    @1
+    M=0	
+
+    @Op
+    0;JMP
 
 (Op)
-@1	
-D=M	
+    @1	
+    D=M	
 
-@0
-A=M	
-M=D	
+    @0
+    A=M	
+    M=D	
 
-@0
-D=M+1	
-@KBD
-D=A-D	
+    @0
+    D=M+1	
 
-@0
-M=M+1	
-A=M
+    @KBD
+    D=A-D	    
 
-@Op
-D;JGT	
-@Reinicio
-0;JMP
+    @0
+    M=M+1	
+    A=M
+
+    @Op
+    D;JGT	
+    
+    @Reinicio
+    0;JMP
