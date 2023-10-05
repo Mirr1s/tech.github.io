@@ -17,7 +17,7 @@
     @SCREEN
     D=A
 
-    @0
+    @Pixel
     M=D	
 
 (PruebaTeclado)
@@ -34,35 +34,35 @@
     0;JMP
 
 (PantallaNegra)
-    @1
+    @Color
     M=-1
 
     @Op
     0;JMP
 
 (PantallaBlanca)
-    @1
+    @Color
     M=0	
 
     @Op
     0;JMP
 
 (Op)
-    @1	
+    @Color
     D=M	
 
-    @0
-    A=M	
+    @Pixel
+    A=M
     M=D	
 
-    @0
-    D=M+1	
+    @Pixel
+    D=M+1
 
     @KBD
-    D=A-D	    
+    D=A-D    
 
-    @0
-    M=M+1	
+    @Pixel
+    M=M+1
     A=M
 
     @Op
