@@ -10,6 +10,7 @@ Para realizar este chip utilizamos CPU, Memory, ROM32K.
 
 ####CPU
 Una unidad central deprocesamiento (CPU), también llamada procesador central, es el circuito electrónico que ejecuta instrucciones que comprenden un programa de computadora. La CPU realiza operaciones básicas de aritmética, lógica, control y entrada / salida (E / S) especificadas por las instrucciones del programa. 
+
 ![CPU](https://github.com/Mirr1s/tech.github.io/blob/main/imagenes/CPU.jpg)
 
 
