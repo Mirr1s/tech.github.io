@@ -22,27 +22,27 @@
 
 (PruebaTeclado)
     @KBD
-    D=M
-
-    @PantallaNegra
-    D;JGT	
+    D=M	
 
     @PantallaBlanca
     D;JEQ	
 
+    @PantallaNegra
+    D;JGT
+
     @PruebaTeclado
-    0;JMP
-
-(PantallaNegra)
-    @Color
-    M=-1
-
-    @Op
     0;JMP
 
 (PantallaBlanca)
     @Color
     M=0	
+
+    @Op
+    0;JMP
+
+(PantallaNegra)
+    @Color
+    M=-1
 
     @Op
     0;JMP
