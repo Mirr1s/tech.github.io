@@ -1,6 +1,6 @@
 # Grupo Tech - Projecto 4 - Lenguaje Maquina
 #
-En este proyecto, el reto es programar en Hack Machine Lenguajes dos programas, uno que multiplica dos numeros y otro que 
+En este proyecto, el reto es programar en Hack Machine Lenguajes dos programas, uno que multiplica dos numeros y otro que hace que la pantalla quede negra al presional una tecla.
 
 #### Mult
 Este programa es usado para multiplicar dos numeros, el resultado tiene que ser menor que 32768, además hay que asumir que ambos valores son mayores o iguales a cero. Para hacerlo se usó el programa de ejemplo que adiciona los primeros 100 numeros en la documentación, ya que una multiplicacion en básicamente suma el mismo numero un x numero de veces.
