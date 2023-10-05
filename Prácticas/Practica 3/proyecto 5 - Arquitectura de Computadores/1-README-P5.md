@@ -3,11 +3,7 @@
 En la cuarta practica vamos a elaborar todos los chips descritos en el capitulo número cinco, estos son: Memory, CPU, Computer. Para la realización de estos se van a usar muchos de los chips que ya fueron terminados en las practicas anteriores . Y de igual manera, los chips que vayamos armando se puede usar para otros en este mismo capitulo, como lo verán acontinuacion.
 #
 
-<h2>Computer</h2>
 
-![Computer](https://github.com/Mirr1s/tech.github.io/blob/d67b41d6f113302ff9cb14ea4ea5dec658582f2d/imagenes/computer.JPG)
-
-Para realizar este chip utilizamos CPU, Memory, ROM32K.
 
 <h2>CPU</h2>
 
@@ -25,3 +21,8 @@ J.(s. f.). nand2tetris/projects/05 at master · jcoglan/nand2tetris. GitHub. Rec
 
 Nisan, N., & Shocken, S. (s. f.).Assembler tutorial. nand2tetris. Recuperado 4 de Octubre de 2023, de https://www.nand2tetris.org/_files/ugd/44046b_c8d720c7154f4c49a7f4cc80d38984d4.pdf 
 
+<h2>Computer</h2>
+
+![Computer](https://github.com/Mirr1s/tech.github.io/blob/d67b41d6f113302ff9cb14ea4ea5dec658582f2d/imagenes/computer.JPG)
+
+Para realizar este chip utilizamos CPU, Memory, ROM32K.
