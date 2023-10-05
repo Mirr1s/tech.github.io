@@ -4,6 +4,7 @@ En la cuarta practica vamos a elaborar todos los chips descritos en el capitulo 
 #
 
 <h2>Computer</h2>
+
 ![Computer](https://github.com/Mirr1s/tech.github.io/blob/d67b41d6f113302ff9cb14ea4ea5dec658582f2d/imagenes/computer.JPG)
 
 Para realizar este chip utilizamos CPU, Memory, ROM32K.
