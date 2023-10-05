@@ -2,8 +2,11 @@
 
 En la cuarta practica vamos a elaborar todos los chips descritos en el capitulo número cinco, estos son: Memory, CPU, Computer. Para la realización de estos se van a usar muchos de los chips que ya fueron terminados en las practicas anteriores . Y de igual manera, los chips que vayamos armando se puede usar para otros en este mismo capitulo, como lo verán acontinuacion.
 #
+<h2>Memory</h2>
 
+![Memory](https://github.com/Mirr1s/tech.github.io/blob/main/imagenes/memoria.png)
 
+El espacio de direcciones general conocido como memoria de datos Hack se realiza mediante un chip llamado Memoria.
 
 <h2>CPU</h2>
 
