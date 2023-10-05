@@ -14,6 +14,12 @@ Una unidad central deprocesamiento (CPU), también llamada procesador central, e
 
 ![CPU](https://github.com/Mirr1s/tech.github.io/blob/main/imagenes/CPU.jpg)
 
+<h2>Computer</h2>
+
+![Computer](https://github.com/Mirr1s/tech.github.io/blob/d67b41d6f113302ff9cb14ea4ea5dec658582f2d/imagenes/computer.JPG)
+
+Para realizar este chip utilizamos CPU, Memory, ROM32K.
+
 Bibliografía 
 
 Shocken, S., & Nisan, N. (2017). Project05. Nand2tetris. Recuperado 4 de Octubre de 2023, de https://www.nand2tetris.org/project05 
@@ -24,8 +30,4 @@ J.(s. f.). nand2tetris/projects/05 at master · jcoglan/nand2tetris. GitHub. Rec
 
 Nisan, N., & Shocken, S. (s. f.).Assembler tutorial. nand2tetris. Recuperado 4 de Octubre de 2023, de https://www.nand2tetris.org/_files/ugd/44046b_c8d720c7154f4c49a7f4cc80d38984d4.pdf 
 
-<h2>Computer</h2>
 
-![Computer](https://github.com/Mirr1s/tech.github.io/blob/d67b41d6f113302ff9cb14ea4ea5dec658582f2d/imagenes/computer.JPG)
-
-Para realizar este chip utilizamos CPU, Memory, ROM32K.
