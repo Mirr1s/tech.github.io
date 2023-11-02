@@ -1,19 +1,22 @@
-# Grupo Tech - Práctica 4
+# Grupo Tech - Proyecto 7
 #
-En esta práctica se realizó un proyecto en el que se escribió un ensamblador que traduce los programas escritos en lenguaje ensamblador simbólico a código binario.
+En esta práctica se implementó un traductor VM, el cual, como su nombre lo dice, traduce los comandos escritos en el lenguaje VM relacionados con la aritmetica de Pilas(Stacks) y los comandos relacionados al acceso a memoria, ya que en el siguiente proyecto es donde se va a complementar este traductor.
 
-Para crear el ensamblador, se inicia mediante la creación de una función que, en primera instancia, establece diccionarios que vinculan los valores binarios correspondientes a las instrucciones presentes en el código .asm. Estos valores binarios se asignan siguiendo las tablas proporcionadas en la sección del proyecto 6 del libro 'The Elements of Computing Systems'. Luego, se procede a analizar línea por línea el archivo que se está traduciendo, y según la naturaleza de cada línea, se asignan los valores binarios según las correspondencias definidas en los diccionarios. Los resultados de esta traducción se almacenan en archivos separados, donde cada uno contiene la traducción resultante para un caso particular. Posteriormente, estos archivos se cargan en el Assembler para efectuar la comparación con los archivos de prueba suministrados, asegurando que los resultados sean congruentes.
+Para realizar este traductor, primero se implementaron las traducciones de cada comando por separado y luego se estandarizaron para que funcionen con cualquier combinación de pop/push y tipos de variable posibles. Como se muestra acontinuación el codigo en el lenguaje Hack Assembly para la instrucción "push constant i"
 
-![Tabla 1](https://github.com/Mirr1s/tech.github.io/blob/main/imagenes/tabla1.png)
+![image](https://github.com/Mirr1s/tech.github.io/assets/113645885/e8a39923-7cd5-42e9-ac3e-138fc50f7ecb)
 
+Este traductor fue implementado usando un Jupiter Notebook en la herramienta de Google Colaboratory, para que este pueda hacer las traducciones, hay que cargar los archivos .vm de los test que se vayan a traducir, y poner sus nombres al final del codigo.
 
-![Tabla 2](https://github.com/Mirr1s/tech.github.io/blob/main/imagenes/tabla2.png)
+![image](https://github.com/Mirr1s/tech.github.io/assets/113645885/6c7429a9-8008-4462-8cc8-f9791904ef3d)
 
-## Teniendo en cuenta las características del ensamblador, ¿Cuál es la principal limitante que observan? Justifique su respuesta.
-La principal limitante que se observó es que se desarrolló para casos de traducción simples. En casos más complejos, el código no está preparado para manejarlos, como puede ser el enlazamiento de etiquetas, y tampoco realiza validaciones minuciosas de la sintaxis de las instrucciones. En situaciones de traducción más complejas, el código proporcionado es propenso a cometer errores, ya que fue concebido pensando en casos simples de traducción.
+![image](https://github.com/Mirr1s/tech.github.io/assets/113645885/89953fbf-2d83-4e34-b64c-1c65d133702f)
+
+Los resultados del traductor fueron buenos, todos los archivos generados pasaron los test preparados por los creadores de Nand2Tetris.
+
 
 #
 Referencias
-1. Coursera. (s. f.). Unit 6.6B: Project 6 Overview: Without Programming. Recuperado el 19 de Octubre de 2023, de https://es.coursera.org/lecture/build-a-computer/unit-6-6b-project-6-overview-without-programming-o6A88
-2. Shimon Schocken and Noam Nisan. (s. f.-a). Project 06. Nand2tetris. Recuperado el 19 de Octubre de 2023, de https://www.nand2tetris.org/project06
-3. Shimon Schocken and Noam Nisan. (s. f.-b). The elements of computing systems (1.a ed., Vol. 1). Recuperado el 19 de Octubre de 2023, de https://www.nand2tetris.org/_files/ugd/44046b_b73759b866b249a0b3a715bf5a18f668.pdf
+1. Su, Yang (2022). Nand2Tetris Project 07 (Part 1) arithmetic logic and memory segment operation commands. Youtube. Recuperado el 30 de Octubre de 2023 de https://www.youtube.com/watch?v=vj1veGsRdbw
+2. Shimon Schocken and Noam Nisan. (s. f.-a). Project 07. Nand2tetris. Recuperado el 30 de Octubre de 2023, de https://www.nand2tetris.org/project07
+3. Shimon Schocken and Noam Nisan. (s. f.-b). The elements of computing systems. Recuperado el 30 de Octubre de 2023, de https://drive.google.com/file/d/1BPmhMLu_4QTcte0I5bK4QBHI8SACnQSt/view
