@@ -166,3 +166,15 @@ body {
     text-align: center; 
     padding: 10px;
 }
+/* Agregar estilos para la sección de videos */
+.trabajo .contenido .videos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.trabajo .contenido .videos iframe {
+    width: 300px; /* Ajusta el ancho según tus preferencias */
+    height: 200px; /* Ajusta la altura según tus preferencias */
+    margin-right: 20px; /* Espaciado entre los videos */
+}
