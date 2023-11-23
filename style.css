@@ -170,12 +170,12 @@ body {
 .trabajo .contenido .videos-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin: 45px 45px 45px;
 }
 
 .trabajo .contenido .videos-container iframe {
     width: 300px; /* Ajusta el ancho según tus preferencias */
-    height: 200px; /* Ajusta la altura según tus preferencias */
+    height: 300px; /* Ajusta la altura según tus preferencias */
     margin-right: 20px; /* Espaciado entre los videos */
 }
 
