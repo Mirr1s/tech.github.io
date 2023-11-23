@@ -111,7 +111,7 @@ body {
 /* Estilo para la sección de Trabajos */
 #trabajos {
     background-color: #2C3333;
-    padding: 50px 106px;
+    padding: 50px 160px;
     text-align: center;
 }
 
@@ -167,14 +167,19 @@ body {
     padding: 10px;
 }
 /* Agregar estilos para la sección de videos */
-.trabajo .contenido .videos {
+.trabajo .contenido .videos-container {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
 
-.trabajo .contenido .videos iframe {
+.trabajo .contenido .videos-container iframe {
     width: 300px; /* Ajusta el ancho según tus preferencias */
     height: 200px; /* Ajusta la altura según tus preferencias */
     margin-right: 20px; /* Espaciado entre los videos */
+}
+
+/* Estilo adicional para separar las filas de videos */
+.trabajo .contenido .videos-container + .videos-container {
+    margin-top: 20px;
 }
