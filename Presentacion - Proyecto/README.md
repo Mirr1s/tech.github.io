@@ -3,9 +3,13 @@
 Aqui esta el video presentacion de nuestro proyecto final 
 
 Integrantes:
+
 -Joan Sebastian Pedraza Nova 2210100
+
 -Jaider Santiago Peña Basto 2205082
+
 -Johan Estiven Peñaranda Basto 2205084
+
 -Miguel Enrique Quintero Suarez 2190932
 #
 
