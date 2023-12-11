@@ -1,8 +1,12 @@
-# Practica 7 
+# Presentacion Proyecto Final
 
-Aqui esta la solución de la practica 7, darle click a la imagen para que se le redireccione al video en youtube
+Aqui esta el video presentacion de nuestro proyecto final 
 
-Estudiante: Joan Sebastian Pedraza Nova - 2210100
+Integrantes:
+-Joan Sebastian Pedraza Nova 2210100
+-Jaider Santiago Peña Basto 2205082
+-Johan Estiven Peñaranda Basto 2205084
+-Miguel Enrique Quintero Suarez 2190932
 #
 
-[![Solucion Practica 7](https://github.com/Mirr1s/tech.github.io/assets/113645885/149d368d-9737-4db9-8522-76da55165880)](https://www.youtube.com/watch?v=TemnnQk_YzE)
+[![Solucion Practica 7](https://github.com/Mirr1s/tech.github.io/blob/main/Presentacion%20-%20Proyecto/Poster.jpg)](https://youtu.be/3q2XmvG5bdw)
